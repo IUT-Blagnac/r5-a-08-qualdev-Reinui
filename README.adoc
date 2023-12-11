@@ -3,7 +3,7 @@
 :icons: font
 :MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
 
-Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
+Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Adriel Marchant].
 
 == TP1
 
@@ -18,6 +18,6 @@ public void today_is_sunday() {
 ---
 
 .Exemple d'image insérée en asciidoc
-image::artifacts-r303.svg[width=80%]
+image::fin-tp1-tests.png[width=80%]
 
 == TP2...
