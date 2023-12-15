@@ -1,8 +1,9 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13207667&assignment_repo_type=AssignmentRepo)
 = R5.A.08 -- Dépôt pour les TPs
 :icons: font
 :MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
 
-Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
+Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Adriel Marchant].
 
 == TP1
 
@@ -16,7 +17,69 @@ public void today_is_sunday() {
 }
 ---
 
-.Exemple d'image insérée en asciidoc
-image::artifacts-r303.svg[width=80%]
+.contenu de is_it_friday_yet.feature 
 
-== TP2...
+Feature: Is it Friday yet?
+  Everybody wants to know when it's Friday
+
+  Scenario: Sunday isn't Friday
+    Given today is Sunday
+    When I ask whether it's Friday yet
+    Then I should be told "Nope"
+    
+  Scenario: Friday is Friday
+    Given today is Friday
+    When I ask whether it's Friday yet
+    Then I should be told "TGIF"
+
+.Exemple d'image insérée en asciidoc
+image::fin-tp1-tests.png[width=80%]
+
+== TP2
+
+ === Contenu de Order.java 
+
+ package dojo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Order {
+    private String buyer ="";
+    private String drinker = "";
+    private List<String> cocktails = new ArrayList<>();
+
+    public List<String> getCocktails() {
+        return cocktails;
+    }
+
+    public void setCocktails(List<String> fCocktails) {
+        this.cocktails = fCocktails;
+    }
+
+    public void addCocktail(String fCocktail){
+        this.cocktails.add(fCocktail);
+    }
+
+    public void setBuyer(String fBuyer){
+        this.buyer = fBuyer;
+    }
+
+    public String getBuyer() {
+        return this.buyer;
+    }
+
+    public void setDrinker(String fDrinker){
+        this.drinker = fDrinker;
+    }
+
+
+    public String getDrinker() {
+        return this.drinker;
+    }
+
+    
+}
+
+image::TP2_FIN.png[width=80%]
+
