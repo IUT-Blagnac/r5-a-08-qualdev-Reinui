@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 public class CocktailSteps {
     private Order order = new Order();
 
-   @Given("{string} who wants to buy a drink")
+   @Given("Romeo who wants to buy a drink")
     public void romeo_who_wants_to_buy_a_drink() {
         order.setBuyer("Romeo");
     }
